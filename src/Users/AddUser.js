@@ -25,7 +25,7 @@ const AddUser = (props) => {
     const userSubmitHandler = (e) => {
         e.preventDefault();
 
-        if (name.trim().length === 0 || age.trim().length === 0 || +age.trim()[0]===0) {
+        if (name.trim().length === 0 || age.trim().length === 0 || age.trim()[0]===0) {
             setError({
               title: "Date incomplete",
               message: "Introduceti numele complet si varsta",
