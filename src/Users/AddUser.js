@@ -15,7 +15,7 @@ const AddUser = (props) => {
 
 
     const newNameHandler = (e) => {
-        setName(e.target.value);
+        setName(e.target.value.replace(/(^\w{1})|(\s{1}\w{1})/g, match => match.toUpperCase()));
     }
 
     const newAgeHandler = (e) => {
